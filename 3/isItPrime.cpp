@@ -1,20 +1,28 @@
 #include<iostream>
 using namespace std;
+/*
 
-int main() {
-    int n;
-    cin >> n;
-    int i;
-    i=2;
-    while (n%i!=0 && i<n-1){
-        i++;
-    }
-    if(n%i!=0){
-        cout << "It is Prime" << endl;
-    } else {
-        cout << "It is not a Prime Number" << endl;
-    }
+    // My Code which took me half an hour to fix
+    int main(){
+        int i = 2;
+        int n;
+        cin>>n;
+        bool isNotPrime = false;
+        while(i<n && isNotPrime==false){
+            if(n%i==0 ){
+                isNotPrime = true;
+            } else {
+                i++;
+            }
+        }
+        if (isNotPrime) {
+            cout<<"Not Prime"<<endl;
+        } else {
+            cout<<"Prime"<<endl;
+        }
+
 }
+*/
 
 /* 
     Here we initialize the no. which will be 
@@ -27,5 +35,23 @@ int main() {
     Then using a conditional we check if input number
     was divisible by the number i. Then according to
     it, we print that if it is a prime or not.
+
+    // My Code 
+    int main() {
+        int n;
+        cin >> n;
+        int i;
+        i=2;
+        while (n%i!=0 && i<n-1){
+            i++;
+        }
+        if(n%i!=0){
+            cout << "It is Prime" << endl;
+        } else {
+            cout << "It is not a Prime Number" << endl;
+        }
+    }
 */
+
+
 
